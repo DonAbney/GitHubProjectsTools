@@ -9,4 +9,4 @@ npm install
 npm start
 ```
 
-Then, browse to [http://localhost:8081/list]() to get the projects list.
+Then, browse to [http://localhost:8081]() to get the projects list.
