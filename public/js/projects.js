@@ -11,6 +11,5 @@ function getProjectsList() {
   }).then(function(data) {
     var project = $.parseJSON(data);
       $(".project").text(project.projects);
-      console.log(project.projects);
     });
 }
