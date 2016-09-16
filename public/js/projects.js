@@ -1,33 +1,14 @@
 $(document).ready(function() {
-  setInterval(refreshRace, 1000);
+  setInterval(refreshRace, 5000);
 
   function refreshRace() {
-  //   $.ajax({
-  //     // Update IP
-  //     url: "http://localhost:8081/status",
-  //     crossDomain: true
-  //   }).then(function(data) {
-  //     var leaders = [];
-  //     var leaderWidth = 0;
-  //
-  //     var racers = $.parseJSON(data);
-  //     $.each(racers, function(index, racer) {
-	// var percComplete = racer.percentage;
-	// var percWidth = parseInt(racer.percentage);
-  //
-	// if (percWidth < 15) {
-	//   percWidth = 15;
-	// }
-  //
-  // if (typeof percComplete == 'undefined') {
-  //   percComplete = 0;
-  // }
-  //
-  // racer_number = index.slice(-1);
-	// $("#" + index).text(racer.screenName + ' ' + percComplete + '%');
-  // $("#lane" + racer_number).css("background-position", percWidth + '% center');
-  //     });
-  //
-  //   });
+    $.ajax({
+      url: "http://localhost:8081/list",
+      crossDomain: true
+    }).then(function(data) {
+      var project = $.parseJSON(data);
+	      $(".project").text(project.projects);
+        console.log(project.projects);
+      });
   }
 });
