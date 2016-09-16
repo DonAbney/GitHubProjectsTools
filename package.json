@@ -1,0 +1,29 @@
+{
+  "name": "github-projects-tools",
+  "version": "1.0.0",
+  "description": "Gettting to know GitHub Projects",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "body-parser": "^1.15.0",
+    "dotenv":"^2.0.0"
+  },
+  "scripts": {
+    "test": "jasmine-node --color --autotest tests --watch controllers models",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonAbney/GitHubProjectsTools.git"
+  },
+  "author": "Pillar Technology",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DonAbney/GitHubProjectsTools/issues"
+  },
+  "homepage": "https://github.com/DonAbney/GitHubProjectsTools#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "jasmine-node": "^1.14.5"
+  }
+}

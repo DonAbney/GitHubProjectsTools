@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+build
+*.swp
+node_modules
+.DS_Store
+DS_Store
+**/output
+node_modules/
+*/node_modules/*
